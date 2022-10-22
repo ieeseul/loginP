@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>캡스톤</title>
+	</head>
+    <body>
+        <h3>*사용자 확인을 위해 얼굴을 인식합니다.*</h3>
+            <h2>Login</h2>
+            <form action="send5" method="GET">
+                <label for="userid">Id : <input type="text" id="userid" name="userid"></label><br>
+                <label for="password">Password : <input type="text" id="password" name="password"></label><br>
+                <input type="submit" value="Login" id="btn5">
+            </form>
+            <video  id="myVideo" width="400" height="300" style="border: 1px solid #ddd;"></video>
+            <input type=button value="본인 인증" onclick="{getVideo()}"><br>
+        <script src="webcam.js"></script>
+    </body>
+</html>
