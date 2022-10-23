@@ -7,14 +7,15 @@
     <title>캡스톤</title>
 	</head>
     <body>
-        <h3>비대면 부정행위 감지 프로그램</h3>
+        <h3>*사용자 확인을 위해 얼굴을 인식합니다.*</h3>
             <h2>Login</h2>
-            <form action="result" method="GET">
+            <form action="send5" method="GET">
                 <label for="userid">Id : <input type="text" id="userid" name="userid"></label><br>
                 <label for="password">Password : <input type="text" id="password" name="password"></label><br>
-                <input type="submit" value="로그인" id="login"><br>
+                <input type="submit" value="Login" id="btn5">
             </form>
-            <button type="button" class="btn btn-primary active" id="btn" 
-	                onclick="document.location.href='loginAdmin.html'">관리자 로그인</button>
+            <video  id="myVideo" width="400" height="300" style="border: 1px solid #ddd;"></video>
+            <input type=button value="본인 인증" onclick="{getVideo()}"><br>
+        <script src="webcam.js"></script>
     </body>
 </html>
